@@ -13,7 +13,7 @@ const EventProps = () => {
   return (
     <div>
         <WelcomUser 
-        onBClick={() => HandleWelcomeUser('Vinod')}
+        onClick={() => HandleWelcomeUser('Vinod')}
         onMouseEnter={HandleHover} / >
     </div>
   )
