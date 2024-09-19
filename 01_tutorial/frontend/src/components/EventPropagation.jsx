@@ -2,11 +2,11 @@ import React from 'react'
 
 const EventPropagation = () => {
   const handleGrandParent =()=>{
-    event.stopPropagation();
+    
     console.log("Grand Parent clicked")
   };
   const handleParenClick = () => {
-    event.stopPropagation();
+   
     console.log('Parent clicked')
   };
   const handleChildClick = (event) =>{
