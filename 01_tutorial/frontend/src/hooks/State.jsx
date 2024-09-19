@@ -13,12 +13,26 @@ const State = () => {
             count + 1
             )
     })
+    
+   
+  }
+  const decrement = ()=> {
+    setCount (() => {
+        return (
+            count - 1
+            )
+    })
+    
    
   }
   return (
-    <div>
-        <p>{count}</p>
-        <button onClick={handleButtonClick}>Increment</button>
+    <div className='flex-cols'>
+        <p className='text'>{count}</p>
+        <div className='grid grid-cols-3 gap-4'>
+        <button onClick={handleButtonClick} className='outline outline-offset-2 outline-pink-500'>Increment</button>
+
+        <button onClick={decrement} className="outline outline-offset-2 outline-pink-500">decrement</button>
+        </div>
     </div>
   )
 }
