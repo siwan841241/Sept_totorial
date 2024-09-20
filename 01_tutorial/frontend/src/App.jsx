@@ -6,7 +6,7 @@ import EventProps from './components/EventProps'
 import Home from './home/Home'
 import EventPropagation from './components/EventPropagation'
 import State from './hooks/State'
-import DeriveState from './home/DeriveState'
+import DeriveState from './hooks/DeriveState'
 
 function App() {
   const [count, setCount] = useState(0)
